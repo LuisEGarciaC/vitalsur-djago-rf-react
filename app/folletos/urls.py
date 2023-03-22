@@ -1,0 +1,41 @@
+from django.urls import path
+from . import views
+
+
+urlpatterns = [
+    path('get/', views.getFolletos),
+    path('get/<int:pk>/', views.getSoloFolleto),
+    path('post/', views.postFolletos),
+    path('put/<int:pk>/', views.putFolletos),
+    path('delete/<int:pk>/', views.deleteFolletos),
+    path('qget/', views.getNameQuimica),
+    path('qget/<int:pk>/', views.getSoloQuimica),
+    path('qpost/', views.postQuimica),
+    path('qput/<int:pk>/', views.putQuimica),
+    path('qdelete/<int:pk>/', views.deleteQuimica),
+    path('uget/', views.getUnits),
+    path('uget/<int:pk>/', views.getSoloUnit),
+    path('upost/', views.postUnit),
+    path('uput/<int:pk>/', views.putUnit),
+    path('udelete/<int:pk>/', views.deleteUnit),
+    path('mget/', views.getMethodes),
+    path('mget/<int:pk>/', views.getSoloMethod),
+    path('mpost/', views.postMethod),
+    path('mput/<int:pk>/', views.putMethod),
+    path('tget/', views.getTraceabilitys),
+    path('tget/<int:pk>/', views.getSoloTraceability),
+    path('tpost/', views.postTraceability),
+    path('tput/<int:pk>/', views.putTraceability),
+    path('tdelete/<int:pk>/', views.deleteTraceability),
+    path('eliget/', views.getFullelitrol),
+    path('eliget/<int:pk>/', views.getSolofolelitrol),
+    path('elipost/', views.postElitrol),
+    path('eliput/<int:pk>/', views.putfollElitrol),
+    path('elidelete/<int:pk>/', views.deleteTfolleElitrol),
+    path('ecalget/', views.getFullElical),
+    path('ecalget/<int:pk>/', views.getSolofolElical),
+    path('ecalpost/', views.postElical),
+    path('ecalput/<int:pk>/', views.putfollElical),
+    path('ecaldelete/<int:pk>/', views.deleteTfolleElical),
+]
+# Methodes
